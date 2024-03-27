@@ -1,0 +1,40 @@
+:root {
+
+    --primary-color: darkorchid;
+    --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+
+}
+
+
+h1,h2,h3 {
+    text-align: center;
+}
+
+.links  {
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;    
+}
+
+.links .contact-link,
+.links .about-link {
+    padding: 20px 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+    border-radius: 4px;
+    display: flex;
+}
+
+.links .contact-link {
+    background: var(--primary-color);
+    box-shadow: var(--box-shadow);
+    color: white;
+}
+
+.links .about-link {
+    border: 1px solid var(--primary-color);
+}
+
+.links .contact-link + .about-link {
+    margin-left: 20px; 
+}

@@ -1,82 +1,89 @@
 :root {
-
-    --primary-color: darkorchid;
-    --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
-
-}
-
-
-h1,h2,h3 {
-    text-align: center;
-}
-
-.links  {
+    --primary-color: #6c63ff;
+    --secondary-color: #f5f2fe;
+    --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  body {
+    margin-top: 100px;
+  }
+  
+  h1,
+  h2,
+  h3 {
+    margin: 0;
+  }
+  
+  h1 {
+    font-size: 96px;
+  }
+  
+  h2 {
+    font-size: 48px;
+  }
+  
+  h3 {
+    font-size: 24px;
+    opacity: 0.7;
+  }
+  
+  p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  .navigation-links {
     display: flex;
     margin-top: 40px;
-    justify-content: center;    
-}
-
-.links .contact-link,
-.links .about-link {
+    justify-content: center;
+  }
+  
+  .navigation-links a {
+    margin: 20px;
+  }
+  
+  .primary-link {
+    border-radius: 4px;
     padding: 20px 15px;
     text-decoration: none;
     text-transform: capitalize;
-    border-radius: 4px;
-    display: flex;
-}
-
-.links .contact-link {
     background: var(--primary-color);
     box-shadow: var(--box-shadow);
     color: white;
-}
-
-.links .about-link {
-    border: 1px solid var(--primary-color);
-}
-
-.links .contact-link + .about-link {
-    margin-left: 20px; 
-}
-
-
-
-.contact-section {
-   display: flex;
-   justify-content: center;
-    
-}
-.email-section {
-    display: flex;
-    justify-content: ;
-}
-
-.about-paragraphs {
-    display: flex;
-    padding: 0 66px;
-    margin: 30px 0;
-}
-
-.about-paragraphs p {
-    margin: 10px;
-}
-
-p {
-    background: rgb(182, 147, 153) ;
-    padding: 20px;
+  }
+  
+  .secondary-link {
     border-radius: 4px;
-    font-size: 18px;
-    line-height: 1.5;
+    padding: 20px 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+  }
+  
+  .homepage-link {
+    color: var(--primary-color);
     text-align: center;
-}
-
-
-p {
     display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    unicode-bidi: isolate;
-   
-}
+  }
+  
+  .about-paragraphs {
+    margin: 30px 0;
+  }
+  
+  .about-paragraphs p {
+    margin: 10px;
+  }
+  
+  .email-link {
+    display: flex;
+    justify-content: center;
+    color: var(--primary-color);
+    font-size: 28px;
+    text-decoration: none;
+  }
+  
+  .email-link:hover {
+    text-decoration: underline;
+  }
+  
